@@ -32,5 +32,20 @@ namespace Winforms_App
             //Minimum racers = 4
             //Maximum racers = 8
         }
+
+        private void lbl_output_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtbox_input_TextChanged(object sender, EventArgs e)
+        {
+            lbl_output.Text = txtbox_input.Text;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

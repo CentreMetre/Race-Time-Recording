@@ -1,0 +1,10 @@
+D:\0L Documents\GitHub\Race-Time-Recording\bin\Debug\Winforms App.exe.config
+D:\0L Documents\GitHub\Race-Time-Recording\bin\Debug\Winforms App.exe
+D:\0L Documents\GitHub\Race-Time-Recording\bin\Debug\Winforms App.pdb
+D:\0L Documents\GitHub\Race-Time-Recording\obj\Debug\Winforms App.csproj.AssemblyReference.cache
+D:\0L Documents\GitHub\Race-Time-Recording\obj\Debug\Winforms_App.Form1.resources
+D:\0L Documents\GitHub\Race-Time-Recording\obj\Debug\Winforms_App.Properties.Resources.resources
+D:\0L Documents\GitHub\Race-Time-Recording\obj\Debug\Winforms App.csproj.GenerateResource.cache
+D:\0L Documents\GitHub\Race-Time-Recording\obj\Debug\Winforms App.csproj.CoreCompileInputs.cache
+D:\0L Documents\GitHub\Race-Time-Recording\obj\Debug\Winforms App.exe
+D:\0L Documents\GitHub\Race-Time-Recording\obj\Debug\Winforms App.pdb
