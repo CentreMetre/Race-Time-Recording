@@ -34,9 +34,9 @@ namespace Winforms_App
             // 
             // btn_toggle_dark_mode
             // 
-            this.btn_toggle_dark_mode.Location = new System.Drawing.Point(444, 37);
+            this.btn_toggle_dark_mode.Location = new System.Drawing.Point(347, 111);
             this.btn_toggle_dark_mode.Name = "btn_toggle_dark_mode";
-            this.btn_toggle_dark_mode.Size = new System.Drawing.Size(111, 18);
+            this.btn_toggle_dark_mode.Size = new System.Drawing.Size(111, 28);
             this.btn_toggle_dark_mode.TabIndex = 0;
             this.btn_toggle_dark_mode.UseVisualStyleBackColor = true;
             // 
