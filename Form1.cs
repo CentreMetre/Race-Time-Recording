@@ -17,8 +17,9 @@ namespace Winforms_App
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        public void Form1_Load(object sender, EventArgs e)
         {
+            bool dark_mode_enabled = false;
             //Storing Records
             //Mens records
             double men_wr = 9.58;
@@ -40,12 +41,28 @@ namespace Winforms_App
 
         private void txtbox_input_TextChanged(object sender, EventArgs e)
         {
-            lbl_output.Text = txtbox_input.Text;
+            //lbl_output.Text = txtbox_input.Text;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btn_toggle_dark_mode_Click(object sender, EventArgs e)
+        {
+            /*if (dark_mode_enabled == false) //false means light mode is on
+            {
+
+            }*/
+        }
+
+        private void listbox_racers_amount_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            /*for (int i = 0; i < )
+            {
+
+            }*/
         }
     }
 }
