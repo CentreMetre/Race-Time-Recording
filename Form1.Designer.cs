@@ -33,32 +33,37 @@ namespace Winforms_App
             this.radbtn_male = new System.Windows.Forms.RadioButton();
             this.radbtn_female = new System.Windows.Forms.RadioButton();
             this.listbox_racers_amount = new System.Windows.Forms.ListBox();
-            this.txtbox_name_1 = new System.Windows.Forms.TextBox();
-            this.txtbox_name_2 = new System.Windows.Forms.TextBox();
-            this.txtbox_name_4 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.txtbox_name_3 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
-            this.txtbox_name_7 = new System.Windows.Forms.TextBox();
-            this.txtbox_name_8 = new System.Windows.Forms.TextBox();
-            this.txtbox_name_6 = new System.Windows.Forms.TextBox();
-            this.txtbox_name_5 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.lbl_name = new System.Windows.Forms.Label();
+            this.txtbox_time_7 = new System.Windows.Forms.TextBox();
+            this.txtbox_time_8 = new System.Windows.Forms.TextBox();
+            this.txtbox_time_6 = new System.Windows.Forms.TextBox();
+            this.txtbox_time_5 = new System.Windows.Forms.TextBox();
+            this.txtbox_time_3 = new System.Windows.Forms.TextBox();
+            this.txtbox_time_4 = new System.Windows.Forms.TextBox();
+            this.txtbox_time_2 = new System.Windows.Forms.TextBox();
+            this.txtbox_time_1 = new System.Windows.Forms.TextBox();
             this.lbl_times = new System.Windows.Forms.Label();
+            this.lbl_gender = new System.Windows.Forms.Label();
+            this.lbl_racers_amount = new System.Windows.Forms.Label();
+            this.lbl_lanes = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btn_help = new System.Windows.Forms.Button();
+            this.lbl_lane_1 = new System.Windows.Forms.Label();
+            this.lbl_lane_2 = new System.Windows.Forms.Label();
+            this.lbl_lane_3 = new System.Windows.Forms.Label();
+            this.lbl_lane_4 = new System.Windows.Forms.Label();
+            this.lbl_lane_5 = new System.Windows.Forms.Label();
+            this.lbl_lane_6 = new System.Windows.Forms.Label();
+            this.lbl_lane_7 = new System.Windows.Forms.Label();
+            this.lbl_lane_8 = new System.Windows.Forms.Label();
+            this.lbl_sorted_times = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_toggle_dark_mode
             // 
-            this.btn_toggle_dark_mode.Location = new System.Drawing.Point(480, 12);
+            this.btn_toggle_dark_mode.Location = new System.Drawing.Point(9, 266);
             this.btn_toggle_dark_mode.Name = "btn_toggle_dark_mode";
             this.btn_toggle_dark_mode.Size = new System.Drawing.Size(75, 34);
             this.btn_toggle_dark_mode.TabIndex = 0;
@@ -69,7 +74,7 @@ namespace Winforms_App
             // radbtn_male
             // 
             this.radbtn_male.AutoSize = true;
-            this.radbtn_male.Location = new System.Drawing.Point(12, 12);
+            this.radbtn_male.Location = new System.Drawing.Point(9, 49);
             this.radbtn_male.Name = "radbtn_male";
             this.radbtn_male.Size = new System.Drawing.Size(48, 17);
             this.radbtn_male.TabIndex = 1;
@@ -80,7 +85,7 @@ namespace Winforms_App
             // radbtn_female
             // 
             this.radbtn_female.AutoSize = true;
-            this.radbtn_female.Location = new System.Drawing.Point(12, 35);
+            this.radbtn_female.Location = new System.Drawing.Point(9, 72);
             this.radbtn_female.Name = "radbtn_female";
             this.radbtn_female.Size = new System.Drawing.Size(59, 17);
             this.radbtn_female.TabIndex = 2;
@@ -97,32 +102,11 @@ namespace Winforms_App
             "6",
             "7",
             "8"});
-            this.listbox_racers_amount.Location = new System.Drawing.Point(12, 58);
+            this.listbox_racers_amount.Location = new System.Drawing.Point(9, 157);
             this.listbox_racers_amount.Name = "listbox_racers_amount";
             this.listbox_racers_amount.Size = new System.Drawing.Size(59, 69);
             this.listbox_racers_amount.TabIndex = 4;
             this.listbox_racers_amount.SelectedIndexChanged += new System.EventHandler(this.listbox_racers_amount_SelectedIndexChanged);
-            // 
-            // txtbox_name_1
-            // 
-            this.txtbox_name_1.Location = new System.Drawing.Point(12, 165);
-            this.txtbox_name_1.Name = "txtbox_name_1";
-            this.txtbox_name_1.Size = new System.Drawing.Size(100, 20);
-            this.txtbox_name_1.TabIndex = 5;
-            // 
-            // txtbox_name_2
-            // 
-            this.txtbox_name_2.Location = new System.Drawing.Point(12, 191);
-            this.txtbox_name_2.Name = "txtbox_name_2";
-            this.txtbox_name_2.Size = new System.Drawing.Size(100, 20);
-            this.txtbox_name_2.TabIndex = 6;
-            // 
-            // txtbox_name_4
-            // 
-            this.txtbox_name_4.Location = new System.Drawing.Point(12, 243);
-            this.txtbox_name_4.Name = "txtbox_name_4";
-            this.txtbox_name_4.Size = new System.Drawing.Size(100, 20);
-            this.txtbox_name_4.TabIndex = 7;
             // 
             // textBox4
             // 
@@ -130,13 +114,6 @@ namespace Winforms_App
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 7;
-            // 
-            // txtbox_name_3
-            // 
-            this.txtbox_name_3.Location = new System.Drawing.Point(12, 217);
-            this.txtbox_name_3.Name = "txtbox_name_3";
-            this.txtbox_name_3.Size = new System.Drawing.Size(100, 20);
-            this.txtbox_name_3.TabIndex = 7;
             // 
             // textBox6
             // 
@@ -152,135 +129,228 @@ namespace Winforms_App
             this.textBox9.Size = new System.Drawing.Size(100, 20);
             this.textBox9.TabIndex = 7;
             // 
-            // txtbox_name_7
+            // txtbox_time_7
             // 
-            this.txtbox_name_7.Location = new System.Drawing.Point(12, 321);
-            this.txtbox_name_7.Name = "txtbox_name_7";
-            this.txtbox_name_7.Size = new System.Drawing.Size(100, 20);
-            this.txtbox_name_7.TabIndex = 10;
+            this.txtbox_time_7.Location = new System.Drawing.Point(313, 205);
+            this.txtbox_time_7.Name = "txtbox_time_7";
+            this.txtbox_time_7.Size = new System.Drawing.Size(100, 20);
+            this.txtbox_time_7.TabIndex = 18;
             // 
-            // txtbox_name_8
+            // txtbox_time_8
             // 
-            this.txtbox_name_8.Location = new System.Drawing.Point(12, 347);
-            this.txtbox_name_8.Name = "txtbox_name_8";
-            this.txtbox_name_8.Size = new System.Drawing.Size(100, 20);
-            this.txtbox_name_8.TabIndex = 11;
+            this.txtbox_time_8.Location = new System.Drawing.Point(313, 231);
+            this.txtbox_time_8.Name = "txtbox_time_8";
+            this.txtbox_time_8.Size = new System.Drawing.Size(100, 20);
+            this.txtbox_time_8.TabIndex = 19;
             // 
-            // txtbox_name_6
+            // txtbox_time_6
             // 
-            this.txtbox_name_6.Location = new System.Drawing.Point(12, 295);
-            this.txtbox_name_6.Name = "txtbox_name_6";
-            this.txtbox_name_6.Size = new System.Drawing.Size(100, 20);
-            this.txtbox_name_6.TabIndex = 9;
+            this.txtbox_time_6.Location = new System.Drawing.Point(313, 179);
+            this.txtbox_time_6.Name = "txtbox_time_6";
+            this.txtbox_time_6.Size = new System.Drawing.Size(100, 20);
+            this.txtbox_time_6.TabIndex = 17;
             // 
-            // txtbox_name_5
+            // txtbox_time_5
             // 
-            this.txtbox_name_5.Location = new System.Drawing.Point(12, 269);
-            this.txtbox_name_5.Name = "txtbox_name_5";
-            this.txtbox_name_5.Size = new System.Drawing.Size(100, 20);
-            this.txtbox_name_5.TabIndex = 8;
+            this.txtbox_time_5.Location = new System.Drawing.Point(313, 153);
+            this.txtbox_time_5.Name = "txtbox_time_5";
+            this.txtbox_time_5.Size = new System.Drawing.Size(100, 20);
+            this.txtbox_time_5.TabIndex = 16;
             // 
-            // textBox12
+            // txtbox_time_3
             // 
-            this.textBox12.Location = new System.Drawing.Point(150, 321);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 20);
-            this.textBox12.TabIndex = 18;
+            this.txtbox_time_3.Location = new System.Drawing.Point(313, 101);
+            this.txtbox_time_3.Name = "txtbox_time_3";
+            this.txtbox_time_3.Size = new System.Drawing.Size(100, 20);
+            this.txtbox_time_3.TabIndex = 14;
             // 
-            // textBox13
+            // txtbox_time_4
             // 
-            this.textBox13.Location = new System.Drawing.Point(150, 347);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 20);
-            this.textBox13.TabIndex = 19;
+            this.txtbox_time_4.Location = new System.Drawing.Point(313, 127);
+            this.txtbox_time_4.Name = "txtbox_time_4";
+            this.txtbox_time_4.Size = new System.Drawing.Size(100, 20);
+            this.txtbox_time_4.TabIndex = 15;
             // 
-            // textBox14
+            // txtbox_time_2
             // 
-            this.textBox14.Location = new System.Drawing.Point(150, 295);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 20);
-            this.textBox14.TabIndex = 17;
+            this.txtbox_time_2.Location = new System.Drawing.Point(313, 75);
+            this.txtbox_time_2.Name = "txtbox_time_2";
+            this.txtbox_time_2.Size = new System.Drawing.Size(100, 20);
+            this.txtbox_time_2.TabIndex = 13;
             // 
-            // textBox15
+            // txtbox_time_1
             // 
-            this.textBox15.Location = new System.Drawing.Point(150, 269);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 20);
-            this.textBox15.TabIndex = 16;
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(150, 217);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(100, 20);
-            this.textBox16.TabIndex = 14;
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(150, 243);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(100, 20);
-            this.textBox17.TabIndex = 15;
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(150, 191);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(100, 20);
-            this.textBox18.TabIndex = 13;
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(150, 165);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(100, 20);
-            this.textBox19.TabIndex = 12;
-            // 
-            // lbl_name
-            // 
-            this.lbl_name.AutoSize = true;
-            this.lbl_name.Location = new System.Drawing.Point(9, 148);
-            this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(43, 13);
-            this.lbl_name.TabIndex = 20;
-            this.lbl_name.Text = "Names:";
+            this.txtbox_time_1.Location = new System.Drawing.Point(313, 49);
+            this.txtbox_time_1.Name = "txtbox_time_1";
+            this.txtbox_time_1.Size = new System.Drawing.Size(100, 20);
+            this.txtbox_time_1.TabIndex = 12;
             // 
             // lbl_times
             // 
             this.lbl_times.AutoSize = true;
-            this.lbl_times.Location = new System.Drawing.Point(147, 148);
+            this.lbl_times.Location = new System.Drawing.Point(310, 32);
             this.lbl_times.Name = "lbl_times";
             this.lbl_times.Size = new System.Drawing.Size(87, 13);
             this.lbl_times.TabIndex = 21;
             this.lbl_times.Text = "Times (seconds):";
+            // 
+            // lbl_gender
+            // 
+            this.lbl_gender.Location = new System.Drawing.Point(6, 9);
+            this.lbl_gender.Name = "lbl_gender";
+            this.lbl_gender.Size = new System.Drawing.Size(147, 37);
+            this.lbl_gender.TabIndex = 22;
+            this.lbl_gender.Text = "What is the sex of the people participating in the race?";
+            // 
+            // lbl_racers_amount
+            // 
+            this.lbl_racers_amount.Location = new System.Drawing.Point(6, 118);
+            this.lbl_racers_amount.Name = "lbl_racers_amount";
+            this.lbl_racers_amount.Size = new System.Drawing.Size(147, 36);
+            this.lbl_racers_amount.TabIndex = 23;
+            this.lbl_racers_amount.Text = "How many people are participating in the race?";
+            // 
+            // lbl_lanes
+            // 
+            this.lbl_lanes.AutoSize = true;
+            this.lbl_lanes.Location = new System.Drawing.Point(226, 9);
+            this.lbl_lanes.Name = "lbl_lanes";
+            this.lbl_lanes.Size = new System.Drawing.Size(39, 13);
+            this.lbl_lanes.TabIndex = 24;
+            this.lbl_lanes.Text = "Lanes:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(310, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(142, 13);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "What time did they achieve?";
+            // 
+            // btn_help
+            // 
+            this.btn_help.Location = new System.Drawing.Point(90, 277);
+            this.btn_help.Name = "btn_help";
+            this.btn_help.Size = new System.Drawing.Size(44, 23);
+            this.btn_help.TabIndex = 26;
+            this.btn_help.Text = "Help";
+            this.btn_help.UseVisualStyleBackColor = true;
+            this.btn_help.Click += new System.EventHandler(this.btn_help_Click);
+            // 
+            // lbl_lane_1
+            // 
+            this.lbl_lane_1.AutoSize = true;
+            this.lbl_lane_1.Location = new System.Drawing.Point(226, 52);
+            this.lbl_lane_1.Name = "lbl_lane_1";
+            this.lbl_lane_1.Size = new System.Drawing.Size(43, 13);
+            this.lbl_lane_1.TabIndex = 27;
+            this.lbl_lane_1.Text = "Lane 1:";
+            // 
+            // lbl_lane_2
+            // 
+            this.lbl_lane_2.AutoSize = true;
+            this.lbl_lane_2.Location = new System.Drawing.Point(226, 78);
+            this.lbl_lane_2.Name = "lbl_lane_2";
+            this.lbl_lane_2.Size = new System.Drawing.Size(43, 13);
+            this.lbl_lane_2.TabIndex = 28;
+            this.lbl_lane_2.Text = "Lane 2:";
+            // 
+            // lbl_lane_3
+            // 
+            this.lbl_lane_3.AutoSize = true;
+            this.lbl_lane_3.Location = new System.Drawing.Point(226, 104);
+            this.lbl_lane_3.Name = "lbl_lane_3";
+            this.lbl_lane_3.Size = new System.Drawing.Size(43, 13);
+            this.lbl_lane_3.TabIndex = 29;
+            this.lbl_lane_3.Text = "Lane 3:";
+            // 
+            // lbl_lane_4
+            // 
+            this.lbl_lane_4.AutoSize = true;
+            this.lbl_lane_4.Location = new System.Drawing.Point(226, 130);
+            this.lbl_lane_4.Name = "lbl_lane_4";
+            this.lbl_lane_4.Size = new System.Drawing.Size(43, 13);
+            this.lbl_lane_4.TabIndex = 30;
+            this.lbl_lane_4.Text = "Lane 4:";
+            // 
+            // lbl_lane_5
+            // 
+            this.lbl_lane_5.AutoSize = true;
+            this.lbl_lane_5.Location = new System.Drawing.Point(226, 156);
+            this.lbl_lane_5.Name = "lbl_lane_5";
+            this.lbl_lane_5.Size = new System.Drawing.Size(43, 13);
+            this.lbl_lane_5.TabIndex = 31;
+            this.lbl_lane_5.Text = "Lane 5:";
+            // 
+            // lbl_lane_6
+            // 
+            this.lbl_lane_6.AutoSize = true;
+            this.lbl_lane_6.Location = new System.Drawing.Point(226, 182);
+            this.lbl_lane_6.Name = "lbl_lane_6";
+            this.lbl_lane_6.Size = new System.Drawing.Size(43, 13);
+            this.lbl_lane_6.TabIndex = 32;
+            this.lbl_lane_6.Text = "Lane 6:";
+            // 
+            // lbl_lane_7
+            // 
+            this.lbl_lane_7.AutoSize = true;
+            this.lbl_lane_7.Location = new System.Drawing.Point(226, 208);
+            this.lbl_lane_7.Name = "lbl_lane_7";
+            this.lbl_lane_7.Size = new System.Drawing.Size(43, 13);
+            this.lbl_lane_7.TabIndex = 33;
+            this.lbl_lane_7.Text = "Lane 7:";
+            // 
+            // lbl_lane_8
+            // 
+            this.lbl_lane_8.AutoSize = true;
+            this.lbl_lane_8.Location = new System.Drawing.Point(226, 234);
+            this.lbl_lane_8.Name = "lbl_lane_8";
+            this.lbl_lane_8.Size = new System.Drawing.Size(43, 13);
+            this.lbl_lane_8.TabIndex = 34;
+            this.lbl_lane_8.Text = "Lane 8:";
+            // 
+            // lbl_sorted_times
+            // 
+            this.lbl_sorted_times.AutoSize = true;
+            this.lbl_sorted_times.Location = new System.Drawing.Point(499, 9);
+            this.lbl_sorted_times.Name = "lbl_sorted_times";
+            this.lbl_sorted_times.Size = new System.Drawing.Size(64, 13);
+            this.lbl_sorted_times.TabIndex = 35;
+            this.lbl_sorted_times.Text = "A sorted list:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(567, 420);
+            this.ClientSize = new System.Drawing.Size(741, 311);
+            this.Controls.Add(this.lbl_sorted_times);
+            this.Controls.Add(this.lbl_lane_8);
+            this.Controls.Add(this.lbl_lane_7);
+            this.Controls.Add(this.lbl_lane_6);
+            this.Controls.Add(this.lbl_lane_5);
+            this.Controls.Add(this.lbl_lane_4);
+            this.Controls.Add(this.lbl_lane_3);
+            this.Controls.Add(this.lbl_lane_2);
+            this.Controls.Add(this.lbl_lane_1);
+            this.Controls.Add(this.btn_help);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_lanes);
+            this.Controls.Add(this.lbl_racers_amount);
+            this.Controls.Add(this.lbl_gender);
             this.Controls.Add(this.lbl_times);
-            this.Controls.Add(this.lbl_name);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox19);
-            this.Controls.Add(this.txtbox_name_7);
-            this.Controls.Add(this.txtbox_name_8);
-            this.Controls.Add(this.txtbox_name_6);
-            this.Controls.Add(this.txtbox_name_5);
+            this.Controls.Add(this.txtbox_time_7);
+            this.Controls.Add(this.txtbox_time_8);
+            this.Controls.Add(this.txtbox_time_6);
+            this.Controls.Add(this.txtbox_time_5);
+            this.Controls.Add(this.txtbox_time_3);
+            this.Controls.Add(this.txtbox_time_4);
+            this.Controls.Add(this.txtbox_time_2);
+            this.Controls.Add(this.txtbox_time_1);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.txtbox_name_3);
-            this.Controls.Add(this.txtbox_name_4);
-            this.Controls.Add(this.txtbox_name_2);
-            this.Controls.Add(this.txtbox_name_1);
             this.Controls.Add(this.listbox_racers_amount);
             this.Controls.Add(this.radbtn_female);
             this.Controls.Add(this.radbtn_male);
@@ -299,27 +369,32 @@ namespace Winforms_App
         private System.Windows.Forms.RadioButton radbtn_male;
         private System.Windows.Forms.RadioButton radbtn_female;
         private System.Windows.Forms.ListBox listbox_racers_amount;
-        private System.Windows.Forms.TextBox txtbox_name_1;
-        private System.Windows.Forms.TextBox txtbox_name_2;
-        private System.Windows.Forms.TextBox txtbox_name_4;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox txtbox_name_3;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox txtbox_name_7;
-        private System.Windows.Forms.TextBox txtbox_name_8;
-        private System.Windows.Forms.TextBox txtbox_name_6;
-        private System.Windows.Forms.TextBox txtbox_name_5;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.Label lbl_name;
+        private System.Windows.Forms.TextBox txtbox_time_7;
+        private System.Windows.Forms.TextBox txtbox_time_8;
+        private System.Windows.Forms.TextBox txtbox_time_6;
+        private System.Windows.Forms.TextBox txtbox_time_5;
+        private System.Windows.Forms.TextBox txtbox_time_3;
+        private System.Windows.Forms.TextBox txtbox_time_4;
+        private System.Windows.Forms.TextBox txtbox_time_2;
+        private System.Windows.Forms.TextBox txtbox_time_1;
         private System.Windows.Forms.Label lbl_times;
+        private System.Windows.Forms.Label lbl_gender;
+        private System.Windows.Forms.Label lbl_racers_amount;
+        private System.Windows.Forms.Label lbl_lanes;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_help;
+        private System.Windows.Forms.Label lbl_lane_1;
+        private System.Windows.Forms.Label lbl_lane_2;
+        private System.Windows.Forms.Label lbl_lane_3;
+        private System.Windows.Forms.Label lbl_lane_4;
+        private System.Windows.Forms.Label lbl_lane_5;
+        private System.Windows.Forms.Label lbl_lane_6;
+        private System.Windows.Forms.Label lbl_lane_7;
+        private System.Windows.Forms.Label lbl_lane_8;
+        private System.Windows.Forms.Label lbl_sorted_times;
     }
 }
 
