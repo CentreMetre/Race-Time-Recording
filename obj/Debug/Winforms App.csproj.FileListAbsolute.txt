@@ -18,3 +18,13 @@ H:\IT\GitHub Repos\Race-Time-Recording-main\obj\Debug\Winforms App.pdb
 H:\IT\GitHub Repos\Race-Time-Recording-main\bin\Debug\Winforms App.exe.config
 H:\IT\GitHub Repos\Race-Time-Recording-main\bin\Debug\Winforms App.exe
 H:\IT\GitHub Repos\Race-Time-Recording-main\bin\Debug\Winforms App.pdb
+\\src-src-fs02\Profiles\02002217.V6\C#\Race-Time-Recording-main\bin\Debug\Winforms App.exe.config
+\\src-src-fs02\Profiles\02002217.V6\C#\Race-Time-Recording-main\bin\Debug\Winforms App.exe
+\\src-src-fs02\Profiles\02002217.V6\C#\Race-Time-Recording-main\bin\Debug\Winforms App.pdb
+\\src-src-fs02\Profiles\02002217.V6\C#\Race-Time-Recording-main\obj\Debug\Winforms App.csproj.AssemblyReference.cache
+\\src-src-fs02\Profiles\02002217.V6\C#\Race-Time-Recording-main\obj\Debug\Winforms_App.Form1.resources
+\\src-src-fs02\Profiles\02002217.V6\C#\Race-Time-Recording-main\obj\Debug\Winforms_App.Properties.Resources.resources
+\\src-src-fs02\Profiles\02002217.V6\C#\Race-Time-Recording-main\obj\Debug\Winforms App.csproj.GenerateResource.cache
+\\src-src-fs02\Profiles\02002217.V6\C#\Race-Time-Recording-main\obj\Debug\Winforms App.csproj.CoreCompileInputs.cache
+\\src-src-fs02\Profiles\02002217.V6\C#\Race-Time-Recording-main\obj\Debug\Winforms App.exe
+\\src-src-fs02\Profiles\02002217.V6\C#\Race-Time-Recording-main\obj\Debug\Winforms App.pdb
