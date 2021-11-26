@@ -161,21 +161,44 @@ namespace Winforms_App
 
             if (help_enabled == false)
             {
-
+                lbl_help.Text = "Firstly, chose the sex of the racers with the buttons int he top left. Secondly chose the amount of racers underneath that. Then, to the right, input the racers time corrosponding to their lanes in the input boxes to the right. Lastly, click the 'Sort' button.";
+                help_enabled = true;
+            }
+            else if (help_enabled == true)
+            {
+                lbl_help.Text = "";
+                help_enabled = false;
             }
 
         }
 
         private void btn_sort_Click(object sender, EventArgs e)
         {
+            //creating a boolean to check if racers are male
+            bool racer_is_male;
+
+            //checking if the racers are male or female
             if (radbtn_male.Checked == true)
             {
-                bool racer_is_male = true;
+                racer_is_male = true;
             }
             else
             {
-                bool racer_is_male = false;
+                racer_is_male = false;
             }
+
+            //converting listbox selected value to a variable
+            int racers_amount = Convert.ToInt32(listbox_racers_amount.SelectedItem);
+
+            //Setting race times array length ot the number clicked in list box
+            int[] race_times = new int[racers_amount];
+
+            //converting the inputs to floats
+            for (int i = 0; i < racers_amount; i++)
+            {
+                
+            }
+
             /*
             for (int i = 0; i < listbox_racers_amount.SelectedIndex; i++)
             {
@@ -193,6 +216,11 @@ namespace Winforms_App
         private void radbtn_male_CheckedChanged_1(object sender, EventArgs e)
         {
             listbox_racers_amount.Enabled = true;
+        }
+
+        private void lbl_test_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

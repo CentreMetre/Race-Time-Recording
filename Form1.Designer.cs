@@ -66,7 +66,7 @@ namespace Winforms_App
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lbl_help = new System.Windows.Forms.Label();
             this.btn_sort = new System.Windows.Forms.Button();
             this.lbl_test = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -402,12 +402,12 @@ namespace Winforms_App
             this.label9.TabIndex = 36;
             this.label9.Text = "Lane 1:";
             // 
-            // label10
+            // lbl_help
             // 
-            this.label10.Location = new System.Drawing.Point(59, 264);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(354, 35);
-            this.label10.TabIndex = 44;
+            this.lbl_help.Location = new System.Drawing.Point(59, 264);
+            this.lbl_help.Name = "lbl_help";
+            this.lbl_help.Size = new System.Drawing.Size(444, 43);
+            this.lbl_help.TabIndex = 44;
             // 
             // btn_sort
             // 
@@ -427,6 +427,7 @@ namespace Winforms_App
             this.lbl_test.Size = new System.Drawing.Size(41, 13);
             this.lbl_test.TabIndex = 46;
             this.lbl_test.Text = "label11";
+            this.lbl_test.Click += new System.EventHandler(this.lbl_test_Click);
             // 
             // Form1
             // 
@@ -436,7 +437,7 @@ namespace Winforms_App
             this.ClientSize = new System.Drawing.Size(741, 305);
             this.Controls.Add(this.lbl_test);
             this.Controls.Add(this.btn_sort);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.lbl_help);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -521,7 +522,7 @@ namespace Winforms_App
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lbl_help;
         private System.Windows.Forms.Button btn_sort;
         private System.Windows.Forms.Label lbl_test;
     }
