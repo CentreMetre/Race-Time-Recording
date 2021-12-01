@@ -58,6 +58,14 @@ namespace Race_Time_Recording_Branch
                 //enabling some controls
                 dgvMain.Enabled = true;
                 btnReset.Enabled = true;
+
+                //adding rows using iteration
+                DataTable dataTable = new DataTable();
+                for (int i = 0; i < Convert.ToInt32(listBoxRacersAmount.SelectedItem); i++)
+                    {
+                        //var row = dataTable.NewRow();
+                        dgvMain.Rows.Add(dataTable.NewRow());
+                    }
                 }
                 else
                 {
@@ -68,13 +76,7 @@ namespace Race_Time_Recording_Branch
                 lblErrorOutput.Text = "Please select a gender.";
             }
 
-            //adding rows using iteration
-            DataTable dataTable = new DataTable();
-            for (int i = 0; i < Convert.ToInt32(listBoxRacersAmount.SelectedItem); i++)
-            {
-                //var row = dataTable.NewRow();
-                dgvMain.Rows.Add(dataTable.NewRow());
-            }
+
 
             //assigning values to variables
 
@@ -100,8 +102,7 @@ namespace Race_Time_Recording_Branch
             btnLockIn.Enabled = true;
 
 
-            //disabling the reset button and datagridview and resseting state to allow user to add more rows
-            dgvMain.AllowUserToAddRows = true;
+            //disabling the reset button and datagridview
             dgvMain.Enabled = false;
             btnReset.Enabled = false;
         }
@@ -124,6 +125,11 @@ namespace Race_Time_Recording_Branch
             {
                 dgvMain.AllowUserToAddRows = false;
             }*/
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

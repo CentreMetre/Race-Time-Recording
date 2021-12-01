@@ -43,6 +43,7 @@ namespace Race_Time_Recording_Branch
             this.btnReset = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.lblErrorOutput = new System.Windows.Forms.Label();
+            this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,6 +88,7 @@ namespace Race_Time_Recording_Branch
             // 
             this.dgvMain.AllowUserToAddRows = false;
             this.dgvMain.AllowUserToDeleteRows = false;
+            this.dgvMain.AllowUserToResizeColumns = false;
             this.dgvMain.AllowUserToResizeRows = false;
             this.dgvMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMain.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -98,7 +100,7 @@ namespace Race_Time_Recording_Branch
             this.dgvMain.Location = new System.Drawing.Point(190, 13);
             this.dgvMain.Name = "dgvMain";
             this.dgvMain.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgvMain.Size = new System.Drawing.Size(441, 260);
+            this.dgvMain.Size = new System.Drawing.Size(444, 260);
             this.dgvMain.TabIndex = 3;
             this.dgvMain.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMain_CellContentClick);
             this.dgvMain.UserAddedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.dgvMain_UserAddedRow);
@@ -137,9 +139,9 @@ namespace Race_Time_Recording_Branch
             this.lblRacersAmount.AutoSize = true;
             this.lblRacersAmount.Location = new System.Drawing.Point(12, 95);
             this.lblRacersAmount.Name = "lblRacersAmount";
-            this.lblRacersAmount.Size = new System.Drawing.Size(134, 13);
+            this.lblRacersAmount.Size = new System.Drawing.Size(140, 13);
             this.lblRacersAmount.TabIndex = 5;
-            this.lblRacersAmount.Text = "How many racers are there";
+            this.lblRacersAmount.Text = "How many racers are there?";
             // 
             // btnLockIn
             // 
@@ -164,7 +166,7 @@ namespace Race_Time_Recording_Branch
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(18, 279);
+            this.button1.Location = new System.Drawing.Point(15, 286);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 8;
@@ -180,11 +182,22 @@ namespace Race_Time_Recording_Branch
             this.lblErrorOutput.Size = new System.Drawing.Size(0, 13);
             this.lblErrorOutput.TabIndex = 9;
             // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(559, 286);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.TabIndex = 10;
+            this.btnClose.Text = "Exit";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(646, 321);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.lblErrorOutput);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnReset);
@@ -220,6 +233,7 @@ namespace Race_Time_Recording_Branch
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblErrorOutput;
+        private System.Windows.Forms.Button btnClose;
     }
 }
 
