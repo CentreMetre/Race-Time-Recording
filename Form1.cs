@@ -8,16 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Winforms_App
+namespace Race_Time_Recording_Branch
 {
     public partial class Form1 : Form
     {
-        //dark mode button boolean to ahck if darkmode is on or not
-        bool dark_mode_enabled = false;
-
-        //help button boolean to be able to hide the help text
-        bool help_enabled = false;
-
         //Storing Records
         //Mens records
         double men_wr = 9.58;
@@ -31,196 +25,105 @@ namespace Winforms_App
         //Minimum racers = 4
         //Maximum racers = 8
 
-        //array for input boxes names
-        String[] input_box_names = { "txtbox_time_1", "txtbox_time_2", "txtbox_time_3", "txtbox_time_4", "txtbox_time_5", "txtbox_time_6", "txtbox_time_7", "txtbox_time_8" };
-        /*for (int i = 0; i <= 7; i++)
-        {
-            int j = i + 1;
-            input_box_names[i] = "txtbox_time_" + j;
-        }*/
+        bool racersAreMale;
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        public void Form1_Load(object sender, EventArgs e)
+
+        private void Form1_Load(object sender, EventArgs e)
         {
-            //string input_box_name_array = "txtbox_time_";
-            //bool dark_mode_enabled = false;
-            lbl_test.Text = input_box_names[1];
+            
         }
 
-        private void lbl_output_Click(object sender, EventArgs e)
+        private void dgvMain_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            
         }
 
-        private void txtbox_input_TextChanged(object sender, EventArgs e)
+        private void btnLockIn_Click(object sender, EventArgs e)
         {
-            //lbl_output.Text = txtbox_input.Text;
-        }
+            lblErrorOutput.Text = "";
+            if (radBtnFemale.Checked == true || radBtnMale.Checked == true)
+                if (listBoxRacersAmount.SelectedIndex != -1)
+                {
+                //locking the first inputs
+                radBtnFemale.Enabled = false;
+                radBtnMale.Enabled = false;
+                listBoxRacersAmount.Enabled = false;
+                btnLockIn.Enabled = false;
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void btn_toggle_dark_mode_Click(object sender, EventArgs e)
-        {
-            if (dark_mode_enabled == false) //false means light mode is on
-            {
-                dark_mode_enabled = true;
-
-            }
-        }
-
-        private void listbox_racers_amount_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //trying to enbale them using arryas, not worked
-            /*for (int i = 0; i <= Convert.ToInt32(listbox_racers_amount.SelectedItem); i++)
-            {
-                int j = i + 1;
-                input_box_names[i] = "txtbox_time_" + j + ".Enabled";
-
-
-
-            }*/
-            //lbl_test.Text = listbox_racers_amount.SelectedItem;
-
-            //hard coding it :(
-            int racers_amount = Convert.ToInt32(listbox_racers_amount.SelectedItem);
-            if (racers_amount == 4)
-            {
-                txtbox_time_1.Enabled = true;
-                txtbox_time_2.Enabled = true;
-                txtbox_time_3.Enabled = true;
-                txtbox_time_4.Enabled = true;
-
-                //disabling
-                txtbox_time_5.Enabled = false;
-                txtbox_time_6.Enabled = false;
-                txtbox_time_7.Enabled = false;
-                txtbox_time_8.Enabled = false;
-            }
-            else if (racers_amount == 5)
-            {
-                txtbox_time_1.Enabled = true;
-                txtbox_time_2.Enabled = true;
-                txtbox_time_3.Enabled = true;
-                txtbox_time_4.Enabled = true;
-                txtbox_time_5.Enabled = true;
-
-                //disabling
-                txtbox_time_6.Enabled = false;
-                txtbox_time_7.Enabled = false;
-                txtbox_time_8.Enabled = false;
-            }
-            else if (racers_amount == 6)
-            {
-                txtbox_time_1.Enabled = true;
-                txtbox_time_2.Enabled = true;
-                txtbox_time_3.Enabled = true;
-                txtbox_time_4.Enabled = true;
-                txtbox_time_5.Enabled = true;
-                txtbox_time_6.Enabled = true;
-
-                //disabling
-                txtbox_time_7.Enabled = false;
-                txtbox_time_8.Enabled = false;
-            }
-            else if (racers_amount == 7)
-            {
-                txtbox_time_1.Enabled = true;
-                txtbox_time_2.Enabled = true;
-                txtbox_time_3.Enabled = true;
-                txtbox_time_4.Enabled = true;
-                txtbox_time_5.Enabled = true;
-                txtbox_time_6.Enabled = true;
-                txtbox_time_7.Enabled = true;
-
-                //disabling
-                txtbox_time_8.Enabled = false;
-            }
-            else if (racers_amount == 8)
-            {
-                txtbox_time_1.Enabled = true;
-                txtbox_time_2.Enabled = true;
-                txtbox_time_3.Enabled = true;
-                txtbox_time_4.Enabled = true;
-                txtbox_time_5.Enabled = true;
-                txtbox_time_6.Enabled = true;
-                txtbox_time_7.Enabled = true;
-                txtbox_time_8.Enabled = true;
-            }
-        }
-
-        private void btn_help_Click(object sender, EventArgs e)
-        {
-            //Chose the sex of the racers and how many racers there are. Then input their time in the corrosponing lane input box. Then press the 'sort' button.
-
-            if (help_enabled == false)
-            {
-                lbl_help.Text = "Firstly, chose the sex of the racers with the buttons int he top left. Secondly chose the amount of racers underneath that. Then, to the right, input the racers time corrosponding to their lanes in the input boxes to the right. Lastly, click the 'Sort' button.";
-                help_enabled = true;
-            }
-            else if (help_enabled == true)
-            {
-                lbl_help.Text = "";
-                help_enabled = false;
-            }
-
-        }
-
-        private void btn_sort_Click(object sender, EventArgs e)
-        {
-            //creating a boolean to check if racers are male
-            bool racer_is_male;
-
-            //checking if the racers are male or female
-            if (radbtn_male.Checked == true)
-            {
-                racer_is_male = true;
-            }
+                //enabling some controls
+                dgvMain.Enabled = true;
+                btnReset.Enabled = true;
+                }
+                else
+                {
+                    lblErrorOutput.Text = "Please select a racers amount.";
+                }
             else
             {
-                racer_is_male = false;
+                lblErrorOutput.Text = "Please select a gender.";
             }
 
-            //converting listbox selected value to a variable
-            int racers_amount = Convert.ToInt32(listbox_racers_amount.SelectedItem);
-
-            //Setting race times array length ot the number clicked in list box
-            int[] race_times = new int[racers_amount];
-
-            //converting the inputs to floats
-            for (int i = 0; i < racers_amount; i++)
+            //adding rows using iteration
+            DataTable dataTable = new DataTable();
+            for (int i = 0; i < Convert.ToInt32(listBoxRacersAmount.SelectedItem); i++)
             {
-                
+                //var row = dataTable.NewRow();
+                dgvMain.Rows.Add(dataTable.NewRow());
             }
 
-            /*
-            for (int i = 0; i < listbox_racers_amount.SelectedIndex; i++)
+            //assigning values to variables
+
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            //enabling those controls again#
+            //enbaling radio buttons
+            radBtnFemale.Enabled = true;
+            radBtnMale.Enabled = true;
+            //unchecking radio buttons
+            radBtnFemale.Checked = false;
+            radBtnMale.Checked = false;
+
+            //enabling listbox
+            listBoxRacersAmount.Enabled = true;
+            //clearing listbox selected item
+            listBoxRacersAmount.SelectionMode = SelectionMode.None;
+            listBoxRacersAmount.SelectionMode = SelectionMode.One;
+            
+            //enabling the lock in button
+            btnLockIn.Enabled = true;
+
+
+            //disabling the reset button and datagridview and resseting state to allow user to add more rows
+            dgvMain.AllowUserToAddRows = true;
+            dgvMain.Enabled = false;
+            btnReset.Enabled = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void listBoxRacersAmount_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //lblErrorOutput.Text = Convert.ToString(listBoxRacersAmount.SelectedIndex);
+        }
+
+        private void dgvMain_UserAddedRow(object sender, DataGridViewRowEventArgs e)
+        {
+            /*int racerAmount = Convert.ToInt32(listBoxRacersAmount.SelectedItem);
+            lblErrorOutput.Text = "Row added";
+            if (dgvMain.Rows.Count == racerAmount + 1)
+
             {
-                txtbox_time_i = txtbox_time_1 + i;
-            }*/ // was for not allowing inputs on boxes th user didnt want, not sure how to do it 
-
-            Array[] input_box_names = new Array[8];
-        }
-
-        private void radbtn_female_CheckedChanged_1(object sender, EventArgs e)
-        {
-            listbox_racers_amount.Enabled = true;
-        }
-
-        private void radbtn_male_CheckedChanged_1(object sender, EventArgs e)
-        {
-            listbox_racers_amount.Enabled = true;
-        }
-
-        private void lbl_test_Click(object sender, EventArgs e)
-        {
-
+                dgvMain.AllowUserToAddRows = false;
+            }*/
         }
     }
 }

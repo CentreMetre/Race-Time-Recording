@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Winforms App")]
+[assembly: AssemblyTitle("Race Time Recording Branch")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Winforms App")]
+[assembly: AssemblyProduct("Race Time Recording Branch")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c2eb4b0f-0adc-41af-83b9-b966ef9bd513")]
+[assembly: Guid("2667b147-fad6-4626-9042-50831069347b")]
 
 // Version information for an assembly consists of the following four values:
 //

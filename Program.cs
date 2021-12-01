@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Winforms_App
+namespace Race_Time_Recording_Branch
 {
     static class Program
     {

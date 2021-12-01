@@ -1,0 +1,10 @@
+\\src-src-fs02\Profiles\02002217.V6\C#\Race Time Recording Branch 1\Race Time Recording Branch\bin\Debug\Race Time Recording Branch.exe.config
+\\src-src-fs02\Profiles\02002217.V6\C#\Race Time Recording Branch 1\Race Time Recording Branch\bin\Debug\Race Time Recording Branch.exe
+\\src-src-fs02\Profiles\02002217.V6\C#\Race Time Recording Branch 1\Race Time Recording Branch\bin\Debug\Race Time Recording Branch.pdb
+\\src-src-fs02\Profiles\02002217.V6\C#\Race Time Recording Branch 1\Race Time Recording Branch\obj\Debug\Race Time Recording Branch.csproj.AssemblyReference.cache
+\\src-src-fs02\Profiles\02002217.V6\C#\Race Time Recording Branch 1\Race Time Recording Branch\obj\Debug\Race_Time_Recording_Branch.Form1.resources
+\\src-src-fs02\Profiles\02002217.V6\C#\Race Time Recording Branch 1\Race Time Recording Branch\obj\Debug\Race_Time_Recording_Branch.Properties.Resources.resources
+\\src-src-fs02\Profiles\02002217.V6\C#\Race Time Recording Branch 1\Race Time Recording Branch\obj\Debug\Race Time Recording Branch.csproj.GenerateResource.cache
+\\src-src-fs02\Profiles\02002217.V6\C#\Race Time Recording Branch 1\Race Time Recording Branch\obj\Debug\Race Time Recording Branch.csproj.CoreCompileInputs.cache
+\\src-src-fs02\Profiles\02002217.V6\C#\Race Time Recording Branch 1\Race Time Recording Branch\obj\Debug\Race Time Recording Branch.exe
+\\src-src-fs02\Profiles\02002217.V6\C#\Race Time Recording Branch 1\Race Time Recording Branch\obj\Debug\Race Time Recording Branch.pdb
